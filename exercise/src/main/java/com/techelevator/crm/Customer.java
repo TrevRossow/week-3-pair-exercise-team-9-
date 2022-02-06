@@ -1,11 +1,13 @@
 package com.techelevator.crm;
 
+import com.techelevator.Billable;
 import com.techelevator.Person;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
-public class Customer extends Person {
+public class Customer extends Person implements Billable {
 
     //vars
     private String phoneNumber;
@@ -37,6 +39,11 @@ public class Customer extends Person {
 
     public Customer (String firstName, String lastName) {
 
+    }
+
+    @Override
+    public double getBalanceDue(Map<String, Double> servicesRendered) {
+        return 0;
     }
 }
 
