@@ -49,6 +49,6 @@ public class EmployeeTests {
         double total = customer.getBalanceDue(testMap);
         double newTotal = total * 0.5;
 
-        Assert.assertEquals(70, total, 0.0);
+        Assert.assertEquals(80, newTotal, 0.0);
     }
 }
