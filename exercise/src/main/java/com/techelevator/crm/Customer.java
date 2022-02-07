@@ -38,7 +38,8 @@ public class Customer extends Person implements Billable {
     }
 
     public Customer (String firstName, String lastName) {
-
+        super(firstName, lastName);
+        this.phoneNumber = "";
     }
 
     @Override
