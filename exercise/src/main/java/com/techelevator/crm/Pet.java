@@ -21,7 +21,7 @@ public class Pet {
     public String listVaccinations() {//need to remove the commas in the comma-delimited string
         String vaccinesReceived = "";
         for (String result : vaccinations) {
-            vaccinesReceived += result + ",";
+            vaccinesReceived += result + ", ";
         }
 
         if (vaccinesReceived.length() > 2) {

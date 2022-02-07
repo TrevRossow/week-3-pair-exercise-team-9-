@@ -18,6 +18,6 @@ public class CustomerTests {
 
         double total = customer.getBalanceDue(testMap);
 
-        Assert.assertEquals(140, total);
+        Assert.assertEquals(140, total, 0.0);
     }
 }
